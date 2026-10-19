@@ -3,7 +3,7 @@ export default function ShowCard({ show }) {
         <article className="show-card">
             {show.image && <img src={show.image.medium} alt={show.name} />}
             <h2>{show.name}</h2>
-            {show.premired && <p>{show.premiered.slice(0, 4)}</p>}
+            {show.premiered && <p>{show.premiered.slice(0, 4)}</p>}
             <p>{show.genres.join(", ")}</p>
         </article>
     )
