@@ -35,5 +35,5 @@ This app allows users to search for television shows using the TVmaze API and al
 ## Future Improvements
 - Sharing a watchlist with others
 - Ability to sort by status of shows on watchlist, alphabetically, etc.
-- Presonal ratings and reviews for each show
+- Personal ratings and reviews for each show
 - Ability to expand the cards of searched shows so that users can read the full summary
