@@ -1,16 +1,39 @@
-# React + Vite
+# TV Watchlist
+This app allows users to search for television shows using the TVmaze API and allows them to save the shows to a watchlist.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live site](https://j-winchester94.github.io/tv-watchlist/)
 
-Currently, two official plugins are available:
+![Screenshot of TV Watchlist App](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Uses local storage to save TV shows to a watchlist
+- Page updates when user searches for and adds shows to their watchlist
+- Asks users if they wish to delete a show from their list
+- Users are able to update the status of the shows that they're watching to "Plan to Watch," "Watching," or "Finished."
+- Loading and error messages
+- Duplicate prevention
+- Friendly empty states
+- Responsive card grid
 
-## React Compiler
+## Built with
+- HTML5
+- CSS
+- React
+- localStorage
+- Vite
+- [TVmaze API](https://www.tvmaze.com/api)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What I learned
+- How to fetch data in React
+- How to handle nested API data
+- How to handle loading and error states using try / catch
+- How to render things conditionally with &&
+- How to use empty states
+- How to update one item in an array using map and the spread operator
+- How to strip HTML from API text
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Improvements
+- Sharing a watchlist with others
+- Ability to sort by status of shows on watchlist, alphabetically, etc.
+- Presonal ratings and reviews for each show
+- Ability to expand the cards of searched shows so that users can read the full summary
