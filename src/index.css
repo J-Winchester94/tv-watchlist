@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 20px;
   line-height: 1.6;
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 main {
@@ -24,15 +24,19 @@ main {
   margin: 0 auto;
 }
 
+h2 {
+  margin-top: 12px;
+}
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
 }
 
 .show-card {
   background-color: var(--card-color);
-  border: 1px solid, var(--border-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 12px;
 }
@@ -42,4 +46,66 @@ main {
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 6px;
+}
+
+.details {
+  color: var(--muted-text);
+  font-size: smaller;
+}
+
+.summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.searchForm {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#search {
+  flex: 1;
+  gap: 8px;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-family: inherit;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--accent-hover);
+}
+
+.delete-button {
+  background-color: transparent;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.delete-button:hover {
+  background-color: var(--danger-color);
+  color: var(--text-color);
+}
+
+input, select {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.show-card h3 {
+  font-weight: 700;
 }

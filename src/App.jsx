@@ -72,8 +72,8 @@ function App() {
 
   return (<main>
     <h1>TV Watchlist</h1>
-    <form onSubmit={handleSearch}>
-      <label htmlFor="search">Search for a Show</label>
+    <form className="searchForm" onSubmit={handleSearch}>
+      <label htmlFor="search">Search for a Show </label>
       <input id="search" value={searchText} onChange={(event) => setSearchText(event.target.value)} required />
       <button type="submit">Search</button>
     </form>
