@@ -48,6 +48,21 @@ h2 {
   border-radius: 6px;
 }
 
+.show-card h3 {
+  font-weight: 700;
+}
+
+.show-card select {
+  margin-right: 8px;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 .details {
   color: var(--muted-text);
   font-size: smaller;
@@ -65,6 +80,7 @@ h2 {
   display: flex;
   gap: 8px;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 #search {
@@ -80,6 +96,7 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  
 }
 
 button:hover{
@@ -90,7 +107,7 @@ button:hover{
   background-color: transparent;
   color: var(--danger-color);
   border: 1px solid var(--danger-color);
-}
+  }
 
 .delete-button:hover {
   background-color: var(--danger-color);
@@ -106,6 +123,3 @@ input, select {
   font-family: inherit;
 }
 
-.show-card h3 {
-  font-weight: 700;
-}
